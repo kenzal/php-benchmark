@@ -1,0 +1,36 @@
+# --- Composer / PHP Packages ---
+/vendor/
+composer.lock
+
+# --- macOS System Files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# --- Windows System Files ---
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# --- PhpStorm / IntelliJ IDE / Editors ---
+.editorconfig
+.idea/
+*.iml
+*.iws
+
+# --- Testing / Local Cache ---
+.phpunit.result.cache
+.phpunit.cache
+.php-cs-fixer.cache
+/build

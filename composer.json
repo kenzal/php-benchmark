@@ -1,0 +1,64 @@
+{
+  "name": "kenzal/benchmark",
+  "description": "A basic expression benchmarking utility",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "J. Kenzal Hunter, Sr.",
+      "email": "kenzal@ksavalon.net"
+    }
+  ],
+  "require": {
+    "php": "^8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kenzal\\Utility\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kenzal\\Utility\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "laravel/pint": "^1.29",
+    "pestphp/pest": "^2.36",
+    "phpstan/phpstan": "^2.2",
+    "psy/psysh": "^0.12.24",
+    "rector/rector": "^2.5"
+  },
+  "scripts": {
+    "fix": [
+      "@refactor",
+      "@lint"
+    ],
+    "herd:test": [
+      "@test:lint",
+      "@herd:test:unit",
+      "@test:types",
+      "@test:refactor"
+    ],
+    "herd:test:unit": "herd coverage ./vendor/bin/pest --coverage --min=100",
+    "lint": "pint",
+    "refactor": "rector",
+    "repl": "psysh",
+    "test": [
+      "@test:lint",
+      "@test:unit",
+      "@test:types",
+      "@test:refactor"
+    ],
+    "test:lint": "pint --test",
+    "test:unit": "pest --coverage --min=100",
+    "test:types": "phpstan",
+    "test:refactor": "rector --dry-run"
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
