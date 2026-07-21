@@ -5,7 +5,7 @@ A lightweight benchmarking utility for measuring PHP callback execution time in 
 [![Tests](https://github.com/kenzal/php-benchmark/actions/workflows/tests.yml/badge.svg)](https://github.com/kenzal/php-benchmark/actions/workflows/tests.yml)
 [![Code Style](https://github.com/kenzal/php-benchmark/actions/workflows/code-style.yml/badge.svg)](https://github.com/kenzal/php-benchmark/actions/workflows/code-style.yml)
 [![PHP Version](https://img.shields.io/badge/php-8.1%20%7C%208.3%20%7C%208.4%20%7C%208.5-blue.svg)](https://php.net)
-[![Packagist Version](https://img.shields.io/packagist/v/kenzal/php-benchmark)](https://packagist.org/packages/kenzal/php-benchmark)
+[![Packagist Version](https://img.shields.io/packagist/v/kenzal/benchmark)](https://packagist.org/packages/kenzal/benchmark)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## Installation
