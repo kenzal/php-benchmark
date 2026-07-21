@@ -11,7 +11,7 @@ A lightweight benchmarking utility for measuring PHP callback execution time in 
 ## Installation
 
 ```bash
-composer require kenzal/benchmark
+composer require --dev kenzal/php-benchmark
 ```
 
 ## Usage

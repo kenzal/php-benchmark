@@ -1,6 +1,11 @@
 {
   "name": "kenzal/benchmark",
   "description": "A basic expression benchmarking utility",
+  "keywords": [
+    "benchmark",
+    "php",
+    "dev"
+  ],
   "type": "library",
   "license": "MIT",
   "authors": [
