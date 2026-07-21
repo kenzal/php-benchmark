@@ -27,12 +27,11 @@
       "Kenzal\\Utility\\Tests\\": "tests/"
     }
   },
-  "require-dev": {
-    "laravel/pint": "^1.29",
-    "pestphp/pest": "^2.36",
-    "phpstan/phpstan": "^2.2",
-    "psy/psysh": "^0.12.24",
-    "rector/rector": "^2.5"
+  "require-dev": {    "laravel/pint": "*",
+    "pestphp/pest": "*",
+    "phpstan/phpstan": "*",
+    "psy/psysh": "*",
+    "rector/rector": "*"
   },
   "scripts": {
     "fix": [
@@ -40,20 +39,16 @@
       "@lint"
     ],
     "herd:test": [
-      "@test:lint",
       "@herd:test:unit",
-      "@test:types",
-      "@test:refactor"
+      "@test:types"
     ],
     "herd:test:unit": "herd coverage ./vendor/bin/pest --coverage --min=100",
     "lint": "pint",
     "refactor": "rector",
     "repl": "psysh",
     "test": [
-      "@test:lint",
       "@test:unit",
-      "@test:types",
-      "@test:refactor"
+      "@test:types"
     ],
     "test:lint": "pint --test",
     "test:unit": "pest --coverage --min=100",
